@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Table+Chair.ma
-//Last modified: Wed, Aug 27, 2025 04:16:34 PM
+//Last modified: Wed, Aug 27, 2025 04:19:32 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "994AAF3B-4E24-FE8C-41DD-05A2F46C5931";
+fileInfo "UUID" "98851329-4279-4C55-D394-54A045466DA8";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "F461BBA3-4ADD-C164-8587-C5BB0927020A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -32.620302906116834 16.32036728272702 20.258435524007233 ;
-	setAttr ".r" -type "double3" -12.338352730933735 663.40000000008001 -1.4444441239514069e-15 ;
+	setAttr ".t" -type "double3" -30.120905146659759 9.533832964723576 10.143515746004319 ;
+	setAttr ".r" -type "double3" -3.3383527309338561 651.00000000007935 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "AD02A4CD-4CF5-52D0-86E0-9BA899910FA7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 40.745395531703863;
+	setAttr ".coi" 32.973447902360732;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -96,7 +96,6 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dsm" 2;
 createNode transform -n "transform1";
 	rename -uid "27AD9784-40FF-7698-6E3A-E99C53DDB6A2";
-	setAttr ".v" no;
 createNode aiSkyDomeLight -n "aiSkyDomeLight1" -p "transform1";
 	rename -uid "8ED1687D-4FB7-6F36-B3C2-2FB729AE15B9";
 	setAttr -k off ".v" no;
@@ -22745,6 +22744,11 @@ createNode mesh -n "polySurface26Shape" -p "|polySurface26";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
+createNode transform -n "aiSkyDomeLight1";
+	rename -uid "578A56D4-4D0E-4C2F-5ACC-3F9B481810BF";
+createNode aiSkyDomeLight -n "aiSkyDomeLightShape1" -p "|aiSkyDomeLight1";
+	rename -uid "A19FE83D-4013-42E0-65B9-D693EFEC803D";
+	setAttr -k off ".v";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "E29222B1-4192-8B08-0CD1-DDA8055558AF";
 	setAttr -s 2 ".lnk";
@@ -22773,6 +22777,7 @@ createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "2AE369EC-4DFA-0DE6-C57F-DF968D5F6CA5";
 	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".version" -type "string" "5.4.5";
+	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=perspShape;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1 1;Background.Offset=0 0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1 1;Foreground.Offset=0 0;Foreground.Apply Color Management=1;";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "CB7C44B2-4C0D-DF14-A76F-CB991D86E91F";
 	setAttr ".ai_translator" -type "string" "gaussian";
@@ -24744,6 +24749,7 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 select -ne :lightList1;
+	setAttr -s 2 ".l";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -24760,6 +24766,7 @@ select -ne :defaultRenderGlobals;
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
 select -ne :defaultLightSet;
+	setAttr -s 2 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -25022,7 +25029,7 @@ connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drive
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
-connectAttr "aiSkyDomeLight1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr "|transform1|aiSkyDomeLight1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
 connectAttr "polyCube1.out" "polyDuplicateEdge5.ip";
 connectAttr "polyTweak3.out" "polyDuplicateEdge6.ip";
@@ -25296,7 +25303,8 @@ connectAttr "polySurface28Shape.wm" "polyUnite10.im[1]";
 connectAttr "polyUnite10.out" "groupParts39.ig";
 connectAttr "groupId93.id" "groupParts39.gi";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "aiSkyDomeLight1.ltd" ":lightList1.l" -na;
+connectAttr "|transform1|aiSkyDomeLight1.ltd" ":lightList1.l" -na;
+connectAttr "aiSkyDomeLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape3.iog.og[1]" ":initialShadingGroup.dsm" -na;
@@ -25501,4 +25509,5 @@ connectAttr "groupId91.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId93.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId95.msg" ":initialShadingGroup.gn" -na;
 connectAttr "transform1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "|aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
 // End of Table+Chair.ma
