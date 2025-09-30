@@ -1,0 +1,83 @@
+### exported: Tue Sep 30 12:32:24 2025
+### from:     Arnold 7.3.4.1 [0bcd9b62] windows x86_64 clang-15.0.7 oiio-2.4.1 osl-1.13.0 vdb-11.0.0 adlsdk-8.0.7.50 clmhub-3.1.1.43 rlm-14.2.5 optix-8.0.0 2024/09/17 06:56:29
+### host app: MtoA 5.4.5 44c2a8cd (fix-5.4.5) Maya 2025
+### bounds: 0 0 0 0 0 0
+### render_layer: defaultRenderLayer
+### user: 10912869
+### scene: C:/Users/10912869/Documents/GitHub/Essentials/DAGV1100and1200/Maya/scenes/Unit4_CurvesLab.ma
+### meters_per_unit: 0.010000
+
+
+
+options
+{
+ AA_samples 3
+ outputs "RGBA RGBA defaultArnoldFilter/gaussian_filter defaultArnoldDriver/driver_exr.RGBA"
+ xres 960
+ yres 540
+ texture_per_file_stats on
+ texture_searchpath "C:/Users/10912869/Documents/GitHub/Essentials/DAGV1100and1200/Maya/sourceimages"
+ texture_automip off
+ camera "/persp/perspShape"
+ color_manager "defaultColorMgtGlobals"
+ meters_per_unit 0.00999999978
+ frame 1
+ fps 16
+ procedural_searchpath "C:/Users/10912869/Documents/GitHub/Essentials/DAGV1100and1200/Maya/"
+ GI_diffuse_depth 1
+ GI_specular_depth 1
+ GI_transmission_depth 8
+ declare render_layer constant STRING
+ render_layer "defaultRenderLayer"
+}
+
+gaussian_filter
+{
+ name defaultArnoldFilter/gaussian_filter
+}
+
+driver_exr
+{
+ name defaultArnoldDriver/driver_exr.RGBA
+ input "defaultArnoldDenoiser"
+ filename "C:/Users/10912869/Documents/GitHub/Essentials/DAGV1100and1200/Maya/images/Unit4_CurvesLab.exr"
+ color_space ""
+}
+
+imager_denoiser_oidn
+{
+ name defaultArnoldDenoiser
+ layer_selection "RGBA"
+}
+
+color_manager_ocio
+{
+ name defaultColorMgtGlobals
+ config "C:/Program Files/Autodesk/Maya2025/resources/OCIO-configs/Maya2022-default/config.ocio"
+ color_space_linear "ACEScg"
+}
+
+persp_camera
+{
+ name /persp/perspShape
+ matrix
+ 0.934825659 0 0.35510695 0
+ 0.157893047 0.89571178 -0.415656388 0
+ -0.318073481 0.444635183 0.837334335 0
+ 4.45667696 1.77856898 11.2432661 1
+ near_clip 0.100000001
+ far_clip 10000
+ shutter_start 0
+ shutter_end 0
+ shutter_type "box"
+ rolling_shutter "off"
+ rolling_shutter_duration 0
+ motion_start 0
+ motion_end 0
+ exposure 0
+ fov 54.4322243
+ uv_remap 0 0 0 1
+ declare dcc_name constant STRING
+ dcc_name "perspShape"
+}
+
