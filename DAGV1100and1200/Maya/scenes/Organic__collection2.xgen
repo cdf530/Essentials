@@ -2,7 +2,7 @@
 #
 # Version:  /Applications/Autodesk/maya2026/plug-ins/xgen/
 # Author:   carterflory
-# Date:     Tue Oct  7 20:47:06 2025
+# Date:     Tue Oct  7 21:02:22 2025
 
 FileVersion 18
 
@@ -84,7 +84,7 @@ RendermanRenderer
 
 SplinePrimitive
 	_patchNames		
-	length			$a=rand(-.05,.05);#-1.0,1.0\n$a
+	length			$a=rand(-.01,.01);#-1.0,1.0\n$a
 	width			$a=0.0500;#-1.0,1.0\n$a
 	depth			$a=1.0;#0.05,5.0\n$a
 	offU			map('${DESC}/groom/orient/',0)
@@ -102,7 +102,7 @@ SplinePrimitive
 	bendParam[0]		map('${DESC}/groom/bend/',0)
 	bendU[0]		map('${DESC}/groom/bend/',1)
 	bendV[0]		map('${DESC}/groom/bend/',2)
-	fxCVCount		5
+	fxCVCount		15
 	uniformCVs		true
 	taper			$a=1.0000;#-1.0,1.0\n$a
 	taperStart		$a=0.0000;#0.0,1.0\n$a
@@ -116,6 +116,47 @@ SplinePrimitive
 	texelsPerUnit		10.0
 	CVFrequency		1.0
 	widthRamp		rampUI(0.0,1.0,1:1.0,1.0,1)
+	endAttrs
+
+ClumpingFXModule
+	active			true
+	mask			1.0
+	name			Clumping1
+	cvAttr			false
+	mapInitialized		false
+	pointDir		${DESC}/${FXMODULE}/Points/
+	mapDir			${DESC}/${FXMODULE}/Maps/
+	clump			1.0
+	clumpScale		rampUI(0.0032679738562091504,0.5394736842105263,3:1.0,0.0,3)
+	clumpVolumize		false
+	clumpVariance		0.0
+	cut			0.0
+	copy			0.0
+	copyScale		rampUI(0.0,0.0,3)
+	copyVariance		0.0
+	curl			0.0
+	curlScale		rampUI(0.0,0.5,3)
+	offset			0.0
+	offsetScale		rampUI(0.0,0.0,3:0.5,1.0,3:1.0,0.0,3)
+	flatness		0.0
+	flatnessScale		rampUI(0.0,0.0,3)
+	frame			0.0
+	noise			0.0
+	noiseScale		rampUI(0.0,0.0,3)
+	noiseFrequency		0.0
+	noiseCorrelation	0.0
+	exportCurves		false
+	exportDir		curves/
+	exportFaces		
+	texelsPerUnit		10.0
+	radiusVariance		0.5
+	ptDensity		1.0
+	ptMask			1.0
+	ptLength		1.0
+	colorPreview		false
+	useControlMaps		false
+	controlMask		0.0
+	controlMapDir		
 	endAttrs
 
 NoiseFXModule
@@ -142,7 +183,7 @@ RandomGenerator
 	cullAngleBF		0.0
 	cullAngleF		0.0
 	cullExpr		$a=0.0000;#0.0,1.0\n$a
-	density			10000.0
+	density			5000.0
 	mask			1.0 # map('${DESC}/density/')
 	dcFlag			false
 	scFlag			true
