@@ -2,12 +2,12 @@
 #
 # Version:  /Applications/Autodesk/maya2026/plug-ins/xgen/
 # Author:   carterflory
-# Date:     Tue Oct  7 22:05:35 2025
+# Date:     Tue Oct  7 22:35:32 2025
 
 FileVersion 18
 
 Palette
-	name			collection2
+	name			foxfur
 	parent			
 	xgDataPath		${PROJECT}xgen/collections/collection2
 	xgProjectPath		/Users/carterflory/Desktop/GitRepos/Essentials/DAGV1100and1200/Maya/scenes/
