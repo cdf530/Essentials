@@ -1,8 +1,8 @@
 # XGen Palette File
 #
-# Version:  C:/Program Files/Autodesk/Maya2025/plug-ins/xgen/
-# Author:   10912869
-# Date:     Wed Oct  8 16:06:20 2025
+# Version:  /Applications/Autodesk/maya2026/plug-ins/xgen/
+# Author:   carterflory
+# Date:     Thu Oct  9 23:07:20 2025
 
 FileVersion 18
 
@@ -10,7 +10,7 @@ Palette
 	name			foxfur
 	parent			
 	xgDataPath		${PROJECT}xgen/collections/collection2
-	xgProjectPath		C:/Users/10912869/Documents/GitHub/Essentials/DAGV1100and1200/Maya/
+	xgProjectPath		/Users/carterflory/Desktop/GitRepos/Essentials/DAGV1100and1200/Maya/scenes/
 	xgDogTag		
 	endAttrs
 
@@ -29,7 +29,7 @@ Description
 	groom			groom_FoxFur2
 	descriptionId		0
 	xgDataPath		${PROJECT}xgen/collections/collection2/
-	xgProjectPath		C:/Users/10912869/Documents/GitHub/Essentials/DAGV1100and1200/Maya/
+	xgProjectPath		/Users/carterflory/Desktop/GitRepos/Essentials/DAGV1100and1200/Maya/scenes/
 	endAttrs
 
 RendermanRenderer
