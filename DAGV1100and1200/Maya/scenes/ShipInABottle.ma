@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: ShipInABottle.ma
-//Last modified: Sun, Oct 19, 2025 04:38:39 PM
+//Last modified: Sun, Oct 19, 2025 04:41:22 PM
 //Codeset: UTF-8
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Mac OS X 15.6.1";
-fileInfo "UUID" "C15CEB24-E14E-1E25-02AB-BC8D657B6A0F";
+fileInfo "UUID" "2AD9E851-D145-3A11-20D9-A3A53D53052D";
 createNode transform -s -n "persp";
 	rename -uid "F357288F-FA44-E9B8-002A-D1B19F2E04C9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.811566895609948 21.783867507010147 44.073509073575806 ;
-	setAttr ".r" -type "double3" 0.86164714536712561 3938.5999999864362 2.6688070712731349e-17 ;
+	setAttr ".t" -type "double3" -12.648058040448474 41.904363605848992 63.650436245408422 ;
+	setAttr ".r" -type "double3" -23.138352854481695 3946.5999999849132 4.0869571718790044e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CC5DCE0A-1940-D33D-E260-C388631AA9B9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 30.260994424192742;
+	setAttr ".coi" 65.713463962208692;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -120032,11 +120032,11 @@ createNode transform -n "group3";
 	setAttr ".sp" -type "double3" 0.016992807388305664 10.890517234802246 20.202425956726074 ;
 createNode nucleus -n "nucleus1";
 	rename -uid "5D3D60DC-C24F-5BFE-01B1-C9B7AC78CFB5";
-	setAttr -s 2 ".niao";
-	setAttr -s 5 ".nipo";
-	setAttr -s 2 ".nias";
-	setAttr -s 5 ".nips";
-	setAttr -s 2 ".noao";
+	setAttr -s 3 ".niao";
+	setAttr -s 6 ".nipo";
+	setAttr -s 3 ".nias";
+	setAttr -s 6 ".nips";
+	setAttr -s 3 ".noao";
 createNode transform -n "nRigid1";
 	rename -uid "F0608B23-8E44-2C93-1FFB-39ABED7BE862";
 	setAttr -l on ".t";
@@ -120070,7 +120070,7 @@ createNode nRigid -n "nRigidShape1" -p "nRigid1";
 	setAttr -k off ".mxc";
 	setAttr -k off ".lod";
 	setAttr -k off ".inh";
-	setAttr ".cts" 73;
+	setAttr ".cts" 13;
 	setAttr -k off ".stf";
 	setAttr -k off ".igs";
 	setAttr -k off ".ecfh";
@@ -120121,7 +120121,7 @@ createNode nRigid -n "nRigidShape2" -p "nRigid2";
 	setAttr -k off ".mxc";
 	setAttr -k off ".lod";
 	setAttr -k off ".inh";
-	setAttr ".cts" 73;
+	setAttr ".cts" 13;
 	setAttr -k off ".stf";
 	setAttr -k off ".igs";
 	setAttr -k off ".ecfh";
@@ -120172,7 +120172,7 @@ createNode nRigid -n "nRigidShape3" -p "nRigid3";
 	setAttr -k off ".mxc";
 	setAttr -k off ".lod";
 	setAttr -k off ".inh";
-	setAttr ".cts" 73;
+	setAttr ".cts" 13;
 	setAttr -k off ".stf";
 	setAttr -k off ".igs";
 	setAttr -k off ".ecfh";
@@ -120223,7 +120223,7 @@ createNode nRigid -n "nRigidShape4" -p "nRigid4";
 	setAttr -k off ".mxc";
 	setAttr -k off ".lod";
 	setAttr -k off ".inh";
-	setAttr ".cts" 73;
+	setAttr ".cts" 13;
 	setAttr -k off ".stf";
 	setAttr -k off ".igs";
 	setAttr -k off ".ecfh";
@@ -120274,7 +120274,7 @@ createNode nRigid -n "nRigidShape5" -p "nRigid5";
 	setAttr -k off ".mxc";
 	setAttr -k off ".lod";
 	setAttr -k off ".inh";
-	setAttr ".cts" 73;
+	setAttr ".cts" 13;
 	setAttr -k off ".stf";
 	setAttr -k off ".igs";
 	setAttr -k off ".ecfh";
@@ -181915,7 +181915,7 @@ createNode nCloth -n "nClothShape1" -p "nCloth1";
 	setAttr -k off ".mxc";
 	setAttr -k off ".lod";
 	setAttr -k off ".inh";
-	setAttr ".cts" 73;
+	setAttr ".cts" 13;
 	setAttr -k off ".stf";
 	setAttr -k off ".igs";
 	setAttr -k off ".ecfh";
@@ -181977,7 +181977,7 @@ createNode nCloth -n "nClothShape2" -p "nCloth2";
 	setAttr -k off ".mxc";
 	setAttr -k off ".lod";
 	setAttr -k off ".inh";
-	setAttr ".cts" 73;
+	setAttr ".cts" 13;
 	setAttr -k off ".stf";
 	setAttr -k off ".igs";
 	setAttr -k off ".ecfh";
@@ -185310,6 +185310,7 @@ createNode mesh -n "bottleShape" -p "bottle";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".dr" 1;
+	setAttr ".qsp" 0;
 createNode mesh -n "polySurfaceShape14" -p "bottle";
 	rename -uid "294EF12F-E44E-81D0-176E-B8B602DC1EFF";
 	setAttr -k off ".v";
@@ -186105,11 +186106,12 @@ createNode mesh -n "pCubeShape37" -p "pCube37";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "pPlane7";
 	rename -uid "250E1C75-1642-1198-5B94-3388D056E566";
-	setAttr ".t" -type "double3" 0 26.991242187805753 0 ;
-	setAttr ".s" -type "double3" 45.680990185627927 60.489339433101023 60.489339433101023 ;
+	setAttr ".t" -type "double3" 0 26.991242187805753 5.4869692205436422 ;
+	setAttr ".s" -type "double3" 39.488572857853363 60.489339433101023 49.510122299703198 ;
 createNode mesh -n "pPlaneShape7" -p "pPlane7";
 	rename -uid "A243CC56-EF49-48EE-EFDB-478E8E7820F8";
 	setAttr -k off ".v";
+	setAttr ".io" yes;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr -s 5 ".gtag";
@@ -187085,18 +187087,18 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 0.5 9.4368966e-17 -0.42500004 0.5 1.0547119e-16 -0.47500002 0.47500002 1.110223e-16 -0.5
 		 0.42500004 1.110223e-16 -0.5;
 	setAttr -s 3280 ".ed";
-	setAttr ".ed[0:165]"  0 1241 1 1241 221 1 221 1242 1 1242 1 1 0 1248 1 1248 224 1
-		 224 1247 1 1247 11 1 1 1249 1 1249 225 1 225 1250 1 1250 2 1 1 1243 1 1243 222 1
-		 222 1244 1 1244 12 1 2 1255 1 1255 228 1 228 1256 1 1256 3 1 2 1251 1 1251 226 1
-		 226 1252 1 1252 13 1 3 1261 1 1261 231 1 231 1262 1 1262 4 1 3 1257 1 1257 229 1
-		 229 1258 1 1258 14 1 4 1267 1 1267 234 1 234 1268 1 1268 5 1 4 1263 1 1263 232 1
-		 232 1264 1 1264 15 1 5 1273 1 1273 237 1 237 1274 1 1274 6 1 5 1269 1 1269 235 1
-		 235 1270 1 1270 16 1 6 1279 1 1279 240 1 240 1280 1 1280 7 1 6 1275 1 1275 238 1
-		 238 1276 1 1276 17 1 7 1285 1 1285 243 1 243 1286 1 1286 8 1 7 1281 1 1281 241 1
-		 241 1282 1 1282 18 1 8 1291 1 1291 246 1 246 1292 1 1292 9 1 8 1287 1 1287 244 1
-		 244 1288 1 1288 19 1 9 1297 1 1297 249 1 249 1298 1 1298 10 1 9 1293 1 1293 247 1
-		 247 1294 1 1294 20 1 10 1299 1 1299 250 1 250 1300 1 1300 21 1 11 1246 1 1246 223 1
-		 223 1245 1 1245 12 1 11 1308 1 1308 254 1 254 1307 1 1307 22 1 12 1254 1 1254 227 1
+	setAttr ".ed[0:165]"  0 1241 0 1241 221 0 221 1242 0 1242 1 0 0 1248 0 1248 224 0
+		 224 1247 0 1247 11 0 1 1249 0 1249 225 0 225 1250 0 1250 2 0 1 1243 1 1243 222 1
+		 222 1244 1 1244 12 1 2 1255 0 1255 228 0 228 1256 0 1256 3 0 2 1251 1 1251 226 1
+		 226 1252 1 1252 13 1 3 1261 0 1261 231 0 231 1262 0 1262 4 0 3 1257 1 1257 229 1
+		 229 1258 1 1258 14 1 4 1267 0 1267 234 0 234 1268 0 1268 5 0 4 1263 1 1263 232 1
+		 232 1264 1 1264 15 1 5 1273 0 1273 237 0 237 1274 0 1274 6 0 5 1269 1 1269 235 1
+		 235 1270 1 1270 16 1 6 1279 0 1279 240 0 240 1280 0 1280 7 0 6 1275 1 1275 238 1
+		 238 1276 1 1276 17 1 7 1285 0 1285 243 0 243 1286 0 1286 8 0 7 1281 1 1281 241 1
+		 241 1282 1 1282 18 1 8 1291 0 1291 246 0 246 1292 0 1292 9 0 8 1287 1 1287 244 1
+		 244 1288 1 1288 19 1 9 1297 0 1297 249 0 249 1298 0 1298 10 0 9 1293 1 1293 247 1
+		 247 1294 1 1294 20 1 10 1299 0 1299 250 0 250 1300 0 1300 21 0 11 1246 1 1246 223 1
+		 223 1245 1 1245 12 1 11 1308 0 1308 254 0 254 1307 0 1307 22 0 12 1254 1 1254 227 1
 		 227 1253 1 1253 13 1 12 1303 1 1303 252 1 252 1304 1 1304 23 1 13 1260 1 1260 230 1
 		 230 1259 1 1259 14 1 13 1309 1 1309 255 1 255 1310 1 1310 24 1 14 1266 1 1266 233 1
 		 233 1265 1 1265 15 1 14 1313 1 1313 257 1 257 1314 1 1314 25 1 15 1272 1 1272 236 1
@@ -187105,9 +187107,9 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 242 1283 1 1283 18 1 17 1325 1 1325 263 1 263 1326 1 1326 28 1 18 1290 1 1290 245 1
 		 245 1289 1 1289 19 1 18 1329 1 1329 265 1 265 1330 1 1330 29 1 19 1296 1 1296 248 1
 		 248 1295 1 1295 20 1 19 1333 1 1333 267 1 267 1334 1 1334 30 1 20 1302 1 1302 251 1
-		 251 1301 1 1301 21 1 20 1337 1 1337 269 1 269 1338 1 1338 31 1 21 1341 1 1341 271 1;
-	setAttr ".ed[166:331]" 271 1342 1 1342 32 1 22 1306 1 1306 253 1 253 1305 1
-		 1305 23 1 22 1350 1 1350 275 1 275 1349 1 1349 33 1 23 1312 1 1312 256 1 256 1311 1
+		 251 1301 1 1301 21 1 20 1337 1 1337 269 1 269 1338 1 1338 31 1 21 1341 0 1341 271 0;
+	setAttr ".ed[166:331]" 271 1342 0 1342 32 0 22 1306 1 1306 253 1 253 1305 1
+		 1305 23 1 22 1350 0 1350 275 0 275 1349 0 1349 33 0 23 1312 1 1312 256 1 256 1311 1
 		 1311 24 1 23 1345 1 1345 273 1 273 1346 1 1346 34 1 24 1316 1 1316 258 1 258 1315 1
 		 1315 25 1 24 1351 1 1351 276 1 276 1352 1 1352 35 1 25 1320 1 1320 260 1 260 1319 1
 		 1319 26 1 25 1355 1 1355 278 1 278 1356 1 1356 36 1 26 1324 1 1324 262 1 262 1323 1
@@ -187116,9 +187118,9 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 1331 29 1 28 1367 1 1367 284 1 284 1368 1 1368 39 1 29 1336 1 1336 268 1 268 1335 1
 		 1335 30 1 29 1371 1 1371 286 1 286 1372 1 1372 40 1 30 1340 1 1340 270 1 270 1339 1
 		 1339 31 1 30 1375 1 1375 288 1 288 1376 1 1376 41 1 31 1344 1 1344 272 1 272 1343 1
-		 1343 32 1 31 1379 1 1379 290 1 290 1380 1 1380 42 1 32 1383 1 1383 292 1 292 1384 1
-		 1384 43 1 33 1348 1 1348 274 1 274 1347 1 1347 34 1 33 1392 1 1392 296 1 296 1391 1
-		 1391 44 1 34 1354 1 1354 277 1 277 1353 1 1353 35 1 34 1387 1 1387 294 1 294 1388 1
+		 1343 32 1 31 1379 1 1379 290 1 290 1380 1 1380 42 1 32 1383 0 1383 292 0 292 1384 0
+		 1384 43 0 33 1348 1 1348 274 1 274 1347 1 1347 34 1 33 1392 0 1392 296 0 296 1391 0
+		 1391 44 0 34 1354 1 1354 277 1 277 1353 1 1353 35 1 34 1387 1 1387 294 1 294 1388 1
 		 1388 45 1 35 1358 1 1358 279 1 279 1357 1 1357 36 1 35 1393 1 1393 297 1 297 1394 1
 		 1394 46 1 36 1362 1 1362 281 1 281 1361 1 1361 37 1 36 1397 1 1397 299 1 299 1398 1
 		 1398 47 1 37 1366 1 1366 283 1 283 1365 1 1365 38 1 37 1401 1 1401 301 1 301 1402 1
@@ -187128,8 +187130,8 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 1414 51 1 41 1382 1 1382 291 1 291 1381 1 1381 42 1 41 1417 1 1417 309 1 309 1418 1
 		 1418 52 1 42 1386 1 1386 293 1 293 1385 1 1385 43 1 42 1421 1 1421 311 1 311 1422 1
 		 1422 53 1;
-	setAttr ".ed[332:497]" 43 1425 1 1425 313 1 313 1426 1 1426 54 1 44 1390 1
-		 1390 295 1 295 1389 1 1389 45 1 44 1434 1 1434 317 1 317 1433 1 1433 55 1 45 1396 1
+	setAttr ".ed[332:497]" 43 1425 0 1425 313 0 313 1426 0 1426 54 0 44 1390 1
+		 1390 295 1 295 1389 1 1389 45 1 44 1434 0 1434 317 0 317 1433 0 1433 55 0 45 1396 1
 		 1396 298 1 298 1395 1 1395 46 1 45 1429 1 1429 315 1 315 1430 1 1430 56 1 46 1400 1
 		 1400 300 1 300 1399 1 1399 47 1 46 1435 1 1435 318 1 318 1436 1 1436 57 1 47 1404 1
 		 1404 302 1 302 1403 1 1403 48 1 47 1439 1 1439 320 1 320 1440 1 1440 58 1 48 1408 1
@@ -187138,9 +187140,9 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 1416 308 1 308 1415 1 1415 51 1 50 1451 1 1451 326 1 326 1452 1 1452 61 1 51 1420 1
 		 1420 310 1 310 1419 1 1419 52 1 51 1455 1 1455 328 1 328 1456 1 1456 62 1 52 1424 1
 		 1424 312 1 312 1423 1 1423 53 1 52 1459 1 1459 330 1 330 1460 1 1460 63 1 53 1428 1
-		 1428 314 1 314 1427 1 1427 54 1 53 1463 1 1463 332 1 332 1464 1 1464 64 1 54 1467 1
-		 1467 334 1 334 1468 1 1468 65 1 55 1432 1 1432 316 1 316 1431 1 1431 56 1 55 1476 1
-		 1476 338 1 338 1475 1 1475 66 1 56 1438 1 1438 319 1 319 1437 1 1437 57 1 56 1471 1
+		 1428 314 1 314 1427 1 1427 54 1 53 1463 1 1463 332 1 332 1464 1 1464 64 1 54 1467 0
+		 1467 334 0 334 1468 0 1468 65 0 55 1432 1 1432 316 1 316 1431 1 1431 56 1 55 1476 0
+		 1476 338 0 338 1475 0 1475 66 0 56 1438 1 1438 319 1 319 1437 1 1437 57 1 56 1471 1
 		 1471 336 1 336 1472 1 1472 67 1 57 1442 1 1442 321 1 321 1441 1 1441 58 1 57 1477 1
 		 1477 339 1 339 1478 1 1478 68 1 58 1446 1 1446 323 1 323 1445 1 1445 59 1 58 1481 1
 		 1481 121 1 121 1482 1 1482 69 1 59 1450 1 1450 325 1 325 1449 1 1449 60 1 59 1485 1
@@ -187150,9 +187152,9 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 1497 129 1 129 1498 1 1498 73 1 63 1466 1 1466 333 1 333 1465 1 1465 64 1 63 1501 1
 		 1501 131 1 131 1502 1 1502 74 1 64 1470 1 1470 335 1 335 1469 1 1469 65 1 64 1505 1
 		 1505 133 1;
-	setAttr ".ed[498:663]" 133 1506 1 1506 75 1 65 1509 1 1509 135 1 135 1510 1
-		 1510 76 1 66 1474 1 1474 337 1 337 1473 1 1473 67 1 66 1518 1 1518 139 1 139 1517 1
-		 1517 77 1 67 1480 1 1480 340 1 340 1479 1 1479 68 1 67 1513 1 1513 137 1 137 1514 1
+	setAttr ".ed[498:663]" 133 1506 1 1506 75 1 65 1509 0 1509 135 0 135 1510 0
+		 1510 76 0 66 1474 1 1474 337 1 337 1473 1 1473 67 1 66 1518 0 1518 139 0 139 1517 0
+		 1517 77 0 67 1480 1 1480 340 1 340 1479 1 1479 68 1 67 1513 1 1513 137 1 137 1514 1
 		 1514 78 1 68 1484 1 1484 122 1 122 1483 1 1483 69 1 68 1519 1 1519 140 1 140 1520 1
 		 1520 79 1 69 1488 1 1488 124 1 124 1487 1 1487 70 1 69 1523 1 1523 142 1 142 1524 1
 		 1524 80 1 70 1492 1 1492 126 1 126 1491 1 1491 71 1 70 1527 1 1527 144 1 144 1528 1
@@ -187161,8 +187163,8 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 1536 83 1 73 1504 1 1504 132 1 132 1503 1 1503 74 1 73 1539 1 1539 150 1 150 1540 1
 		 1540 84 1 74 1508 1 1508 134 1 134 1507 1 1507 75 1 74 1543 1 1543 152 1 152 1544 1
 		 1544 85 1 75 1512 1 1512 136 1 136 1511 1 1511 76 1 75 1547 1 1547 154 1 154 1548 1
-		 1548 86 1 76 1551 1 1551 156 1 156 1552 1 1552 87 1 77 1516 1 1516 138 1 138 1515 1
-		 1515 78 1 77 1560 1 1560 160 1 160 1559 1 1559 88 1 78 1522 1 1522 141 1 141 1521 1
+		 1548 86 1 76 1551 0 1551 156 0 156 1552 0 1552 87 0 77 1516 1 1516 138 1 138 1515 1
+		 1515 78 1 77 1560 0 1560 160 0 160 1559 0 1559 88 0 78 1522 1 1522 141 1 141 1521 1
 		 1521 79 1 78 1555 1 1555 158 1 158 1556 1 1556 89 1 79 1526 1 1526 143 1 143 1525 1
 		 1525 80 1 79 1561 1 1561 161 1 161 1562 1 1562 90 1 80 1530 1 1530 145 1 145 1529 1
 		 1529 81 1 80 1565 1 1565 163 1 163 1566 1 1566 91 1 81 1534 1 1534 147 1 147 1533 1
@@ -187172,9 +187174,9 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 1545 85 1 84 1581 1 1581 171 1 171 1582 1 1582 95 1 85 1550 1 1550 155 1 155 1549 1
 		 1549 86 1 85 1585 1 1585 173 1 173 1586 1 1586 96 1 86 1554 1 1554 157 1 157 1553 1
 		 1553 87 1;
-	setAttr ".ed[664:829]" 86 1589 1 1589 175 1 175 1590 1 1590 97 1 87 1593 1
-		 1593 177 1 177 1594 1 1594 98 1 88 1558 1 1558 159 1 159 1557 1 1557 89 1 88 1602 1
-		 1602 181 1 181 1601 1 1601 99 1 89 1564 1 1564 162 1 162 1563 1 1563 90 1 89 1597 1
+	setAttr ".ed[664:829]" 86 1589 1 1589 175 1 175 1590 1 1590 97 1 87 1593 0
+		 1593 177 0 177 1594 0 1594 98 0 88 1558 1 1558 159 1 159 1557 1 1557 89 1 88 1602 0
+		 1602 181 0 181 1601 0 1601 99 0 89 1564 1 1564 162 1 162 1563 1 1563 90 1 89 1597 1
 		 1597 179 1 179 1598 1 1598 100 1 90 1568 1 1568 164 1 164 1567 1 1567 91 1 90 1603 1
 		 1603 182 1 182 1604 1 1604 101 1 91 1572 1 1572 166 1 166 1571 1 1571 92 1 91 1607 1
 		 1607 184 1 184 1608 1 1608 102 1 92 1576 1 1576 168 1 168 1575 1 1575 93 1 92 1611 1
@@ -187183,8 +187185,8 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 1619 190 1 190 1620 1 1620 105 1 95 1588 1 1588 174 1 174 1587 1 1587 96 1 95 1623 1
 		 1623 192 1 192 1624 1 1624 106 1 96 1592 1 1592 176 1 176 1591 1 1591 97 1 96 1627 1
 		 1627 194 1 194 1628 1 1628 107 1 97 1596 1 1596 178 1 178 1595 1 1595 98 1 97 1631 1
-		 1631 196 1 196 1632 1 1632 108 1 98 1635 1 1635 198 1 198 1636 1 1636 109 1 99 1600 1
-		 1600 180 1 180 1599 1 1599 100 1 99 1644 1 1644 202 1 202 1643 1 1643 110 1 100 1606 1
+		 1631 196 1 196 1632 1 1632 108 1 98 1635 0 1635 198 0 198 1636 0 1636 109 0 99 1600 1
+		 1600 180 1 180 1599 1 1599 100 1 99 1644 0 1644 202 0 202 1643 0 1643 110 0 100 1606 1
 		 1606 183 1 183 1605 1 1605 101 1 100 1639 1 1639 200 1 200 1640 1 1640 111 1 101 1610 1
 		 1610 185 1 185 1609 1 1609 102 1 101 1645 1 1645 203 1 203 1646 1 1646 112 1 102 1614 1
 		 1614 187 1 187 1613 1 1613 103 1 102 1649 1 1649 205 1 205 1650 1 1650 113 1 103 1618 1
@@ -187195,12 +187197,12 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 		 1634 197 1 197 1633 1 1633 108 1 107 1669 1 1669 215 1 215 1670 1 1670 118 1 108 1638 1
 		 1638 199 1;
 	setAttr ".ed[830:995]" 199 1637 1 1637 109 1 108 1673 1 1673 217 1 217 1674 1
-		 1674 119 1 109 1677 1 1677 219 1 219 1678 1 1678 120 1 110 1642 1 1642 201 1 201 1641 1
-		 1641 111 1 111 1648 1 1648 204 1 204 1647 1 1647 112 1 112 1652 1 1652 206 1 206 1651 1
-		 1651 113 1 113 1656 1 1656 208 1 208 1655 1 1655 114 1 114 1660 1 1660 210 1 210 1659 1
-		 1659 115 1 115 1664 1 1664 212 1 212 1663 1 1663 116 1 116 1668 1 1668 214 1 214 1667 1
-		 1667 117 1 117 1672 1 1672 216 1 216 1671 1 1671 118 1 118 1676 1 1676 218 1 218 1675 1
-		 1675 119 1 119 1680 1 1680 220 1 220 1679 1 1679 120 1 1241 441 1 441 1248 1 221 841 1
+		 1674 119 1 109 1677 0 1677 219 0 219 1678 0 1678 120 0 110 1642 0 1642 201 0 201 1641 0
+		 1641 111 0 111 1648 0 1648 204 0 204 1647 0 1647 112 0 112 1652 0 1652 206 0 206 1651 0
+		 1651 113 0 113 1656 0 1656 208 0 208 1655 0 1655 114 0 114 1660 0 1660 210 0 210 1659 0
+		 1659 115 0 115 1664 0 1664 212 0 212 1663 0 1663 116 0 116 1668 0 1668 214 0 214 1667 0
+		 1667 117 0 117 1672 0 1672 216 0 216 1671 0 1671 118 0 118 1676 0 1676 218 0 218 1675 0
+		 1675 119 0 119 1680 0 1680 220 0 220 1679 0 1679 120 0 1241 441 1 441 1248 1 221 841 1
 		 841 441 1 841 341 1 341 844 1 844 441 1 844 224 1 1242 442 1 442 841 1 1243 442 1
 		 222 842 1 842 442 1 842 341 1 842 443 1 443 843 1 843 341 1 1244 443 1 1245 443 1
 		 223 843 1 844 444 1 444 1247 1 843 444 1 1246 444 1 1249 445 1 445 1243 1 225 845 1
@@ -190726,6 +190728,123 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode mesh -n "outputCloth3" -p "pPlane7";
+	rename -uid "C03E07C6-FD46-12A4-6105-69B9786E2F3A";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".qsp" 0;
+createNode transform -n "nCloth3";
+	rename -uid "8CD3293E-854F-844A-C50C-56BABC3329F6";
+	setAttr -l on ".t";
+	setAttr -l on ".r";
+	setAttr -l on ".s";
+createNode nCloth -n "nClothShape3" -p "nCloth3";
+	rename -uid "00435986-6E4F-3206-4502-569CBE5DF40E";
+	addAttr -ci true -sn "nts" -ln "notes" -dt "string";
+	setAttr -k off ".v";
+	setAttr ".gf" -type "Int32Array" 0 ;
+	setAttr ".pos0" -type "vectorArray" 0 ;
+	setAttr ".vel0" -type "vectorArray" 0 ;
+	setAttr ".acc0" -type "vectorArray" 0 ;
+	setAttr ".mas0" -type "doubleArray" 0 ;
+	setAttr ".id0" -type "doubleArray" 0 ;
+	setAttr ".nid" 1681;
+	setAttr ".bt0" -type "doubleArray" 0 ;
+	setAttr ".ag0" -type "doubleArray" 0 ;
+	setAttr -k off ".dve";
+	setAttr -k off ".lfm";
+	setAttr -k off ".lfr";
+	setAttr -k off ".ead";
+	setAttr ".irbx" -type "string" "";
+	setAttr ".irax" -type "string" "";
+	setAttr ".icx" -type "string" "";
+	setAttr -k off ".dw";
+	setAttr -k off ".fiw";
+	setAttr -k off ".con";
+	setAttr -k off ".eiw";
+	setAttr -k off ".mxc";
+	setAttr -k off ".lod";
+	setAttr -k off ".inh";
+	setAttr ".cts" 13;
+	setAttr -k off ".stf";
+	setAttr -k off ".igs";
+	setAttr -k off ".ecfh";
+	setAttr -k off ".tgs";
+	setAttr -k off ".gsm";
+	setAttr -k off ".chd";
+	setAttr -k off ".trd";
+	setAttr -k off ".prt";
+	setAttr ".thss" 0.24160479009151459;
+	setAttr ".fron" 0.039999999105930328;
+	setAttr ".mxit" 500;
+	setAttr ".pmss" 10;
+	setAttr ".por" 0.96641916036605835;
+	setAttr -s 2 ".fsc[0:1]"  0 1 1 1 0 1;
+	setAttr -s 2 ".pfdo[0:1]"  0 1 1 1 0 1;
+	setAttr ".lsou" yes;
+	setAttr ".srl" 1;
+	setAttr ".stch" 0.019999999552965164;
+	setAttr ".comr" 0.019999999552965164;
+	setAttr ".bnd" 0.5;
+	setAttr ".bnad" 0.30000001192092896;
+	setAttr ".reae" 720.00002003582529;
+	setAttr ".sdmp" 0;
+	setAttr ".scws" 3;
+	setAttr ".pmth" 1;
+	setAttr ".nts" -type "string" "Water is simulated here by using the volume pressure method to conserve internal volume of the cloth object, combined with a low stretch resistance and no damping. The overall triangle density can be better preserved by increasing the stretch resistance, however the substance will not be as free to flow. High substeps and self collision iterations may be needed due to the complexity of self collision that can result with this preset. In general full surface self collisions should be used, and the self collision width can be used to control the minimum thickness of flows.\n\n";
+createNode transform -n "nRigid6";
+	rename -uid "41AF8887-A340-DA37-0948-AFB8FC56B545";
+	setAttr -l on ".t";
+	setAttr -l on ".r";
+	setAttr -l on ".s";
+createNode nRigid -n "nRigidShape6" -p "nRigid6";
+	rename -uid "25CE69E4-8445-0CC7-7822-C9B6C7C9AF6C";
+	setAttr -k off ".v";
+	setAttr ".gf" -type "Int32Array" 0 ;
+	setAttr ".pos0" -type "vectorArray" 0 ;
+	setAttr ".vel0" -type "vectorArray" 0 ;
+	setAttr ".acc0" -type "vectorArray" 0 ;
+	setAttr ".mas0" -type "doubleArray" 0 ;
+	setAttr ".id0" -type "doubleArray" 0 ;
+	setAttr ".nid" 261;
+	setAttr ".bt0" -type "doubleArray" 0 ;
+	setAttr ".ag0" -type "doubleArray" 0 ;
+	setAttr -k off ".dve";
+	setAttr -k off ".lfm";
+	setAttr -k off ".lfr";
+	setAttr -k off ".ead";
+	setAttr ".irbx" -type "string" "";
+	setAttr ".irax" -type "string" "";
+	setAttr ".icx" -type "string" "";
+	setAttr -k off ".dw";
+	setAttr -k off ".fiw";
+	setAttr -k off ".con";
+	setAttr -k off ".eiw";
+	setAttr -k off ".mxc";
+	setAttr -k off ".lod";
+	setAttr -k off ".inh";
+	setAttr ".cts" 13;
+	setAttr -k off ".stf";
+	setAttr -k off ".igs";
+	setAttr -k off ".ecfh";
+	setAttr -k off ".tgs";
+	setAttr -k off ".gsm";
+	setAttr -k off ".chd";
+	setAttr -k off ".trd";
+	setAttr -k off ".prt";
+	setAttr ".thss" 0.45482182502746582;
+	setAttr ".actv" no;
+	setAttr ".scld" no;
+	setAttr ".por" 1.8192873001098633;
+	setAttr ".tpc" yes;
+	setAttr -s 2 ".fsc[0:1]"  0 1 1 1 0 1;
+	setAttr -s 2 ".pfdo[0:1]"  0 1 1 1 0 1;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "8D86C1E5-474B-858E-34EE-3A98E1094788";
 	setAttr -s 3 ".lnk";
@@ -191018,8 +191137,8 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[1].y" 57.142856597900391;
 	setAttr ".tgi[0].ni[1].nvs" 2659;
 select -ne :time1;
-	setAttr ".o" 73;
-	setAttr ".unw" 73;
+	setAttr ".o" 13;
+	setAttr ".unw" 13;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -191043,7 +191162,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 81 ".dsm";
+	setAttr -s 82 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 28 ".gn";
 select -ne :initialParticleSE;
@@ -191122,15 +191241,19 @@ connectAttr "nRigidShape2.cust" "nucleus1.nipo[1]";
 connectAttr "nRigidShape3.cust" "nucleus1.nipo[2]";
 connectAttr "nRigidShape4.cust" "nucleus1.nipo[3]";
 connectAttr "nRigidShape5.cust" "nucleus1.nipo[4]";
+connectAttr "nRigidShape6.cust" "nucleus1.nipo[5]";
 connectAttr "nRigidShape1.stst" "nucleus1.nips[0]";
 connectAttr "nRigidShape2.stst" "nucleus1.nips[1]";
 connectAttr "nRigidShape3.stst" "nucleus1.nips[2]";
 connectAttr "nRigidShape4.stst" "nucleus1.nips[3]";
 connectAttr "nRigidShape5.stst" "nucleus1.nips[4]";
+connectAttr "nRigidShape6.stst" "nucleus1.nips[5]";
 connectAttr "nClothShape1.cust" "nucleus1.niao[0]";
 connectAttr "nClothShape2.cust" "nucleus1.niao[1]";
+connectAttr "nClothShape3.cust" "nucleus1.niao[2]";
 connectAttr "nClothShape1.stst" "nucleus1.nias[0]";
 connectAttr "nClothShape2.stst" "nucleus1.nias[1]";
+connectAttr "nClothShape3.stst" "nucleus1.nias[2]";
 connectAttr "nucleus1.stf" "nRigidShape1.stf";
 connectAttr ":time1.o" "nRigidShape1.cti";
 connectAttr "crate2Shape.w" "nRigidShape1.imsh";
@@ -191171,6 +191294,14 @@ connectAttr ":initialShadingGroup.mwc" "pCylinder43Shape.iog.og[0].gco";
 connectAttr "groupId167.id" "pCylinder43Shape.ciog.cog[1].cgid";
 connectAttr "polySplit3.out" "bottleShape.i";
 connectAttr "polyCube1.out" "pCubeShape37.i";
+connectAttr "nClothShape3.omsh" "outputCloth3.i";
+connectAttr ":time1.o" "nClothShape3.cti";
+connectAttr "nucleus1.stf" "nClothShape3.stf";
+connectAttr "pPlaneShape7.w" "nClothShape3.imsh";
+connectAttr "nucleus1.noao[2]" "nClothShape3.nxst";
+connectAttr ":time1.o" "nRigidShape6.cti";
+connectAttr "nucleus1.stf" "nRigidShape6.stf";
+connectAttr "bottleShape.w" "nRigidShape6.imsh";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLightSet.message";
@@ -191300,6 +191431,7 @@ connectAttr "pCylinder40Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape37.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape38.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pPlaneShape7.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "outputCloth3.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId21.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId22.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId29.msg" ":initialShadingGroup.gn" -na;
