@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: ShipInABottle.ma
-//Last modified: Tue, Oct 21, 2025 12:40:49 PM
+//Last modified: Tue, Oct 21, 2025 12:41:13 PM
 //Codeset: UTF-8
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -12,17 +12,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Mac OS X 15.6.1";
-fileInfo "UUID" "B7111589-E04F-CE98-9922-D2A27C3717C6";
+fileInfo "UUID" "D88568A5-AB45-4411-C699-BBAC5239885F";
 createNode transform -s -n "persp";
 	rename -uid "F357288F-FA44-E9B8-002A-D1B19F2E04C9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 27.235311618859495 19.47694246103293 38.521891093338681 ;
+	setAttr ".t" -type "double3" 27.235311618856404 19.476942461032024 38.52189109333591 ;
 	setAttr ".r" -type "double3" -12.338352855093014 6168.2000000006492 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CC5DCE0A-1940-D33D-E260-C388631AA9B9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 45.941198250739845;
+	setAttr ".coi" 45.941198250735646;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
